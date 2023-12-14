@@ -11,15 +11,16 @@ public class Task {
 		this.content = content;
 	}
 	
-	public String done() {
-		if (done == false) {
-			return "未完了";
-		} else {
-			return "完了";
-		}
+	public void done() {
+		System.out.println("タスク「" + content + "」を完了します。");
+		done = true;
 	}
 	
-	public String print() {
-		return this.date + "のタスク" + "「" + this.content + "」" + done(); 
+	public void print() {
+		if (done) {
+			System.out.println(date + "のタスク「" + content + "」は完了しています。");
+		} else {
+			System.out.println(date + "のタスク「" + content + "」は未完了です。");
+		}
 	}
 }
