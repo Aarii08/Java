@@ -12,8 +12,8 @@ public class Task {
 	}
 	
 	public void done() {
-		System.out.println("タスク「" + content + "」を完了します。");
-		done = true;
+			System.out.println("タスク「" + content + "」を完了します。");
+			done = true;
 	}
 	
 	public void print() {
